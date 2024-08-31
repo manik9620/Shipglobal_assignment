@@ -213,8 +213,8 @@ cursor: pointer;
   }
 
   form input{
-    width: 270px;
-    margin-left: 10px;
+    width: 250px;
+    margin-left: 15px;
   }
 
   .todo-container{
