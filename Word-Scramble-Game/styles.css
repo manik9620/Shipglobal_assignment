@@ -2,7 +2,7 @@ body {
   font-family: "Syne", sans-serif;
   user-select: none;
   margin: 0;
-  background-color: #f4f4f4; /* Added a background color for better contrast */
+  background-color: #f4f4f4; 
 }
 
 header {
@@ -50,7 +50,7 @@ main {
 }
 .timer {
   font-size: 1.2rem;
-  color: #ff4500; /* Color for the timer */
+  color: #ff4500; 
   margin-bottom: 20px;
 }
 
