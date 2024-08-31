@@ -1,0 +1,207 @@
+/* styles.css */
+
+body {
+  font-family: "Syne", sans-serif;
+  user-select: none;
+  margin: 0;
+}
+
+header {
+  background-color: #6d0da1;
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  color: #6d0da1;
+  margin-top: 3rem;
+}
+
+main h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+main p {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+}
+
+form{
+  margin-top: 20px;
+}
+
+form input {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: syne;
+  border-radius: 5px;
+  border: 1px solid slategray;
+  width: 500px;
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #039e0e;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-family: syne;
+}
+
+form button:hover {
+  background-color: #015307;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.todo-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 240px;
+  border: 1px solid #380354;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #380354;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #6d0da1;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #28a745;
+  transition: color 0.3s ease;
+}
+
+.nav-btn.left {
+  margin-right: 10px;
+}
+
+.nav-btn.right {
+  margin-left: 10px;
+}
+
+.nav-btn:hover {
+  color: #218838;
+}
+
+.nav-btn[disabled] {
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.delete-btn{
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+.delete-btn:hover{
+  background-color: rgb(147, 0, 0);
+cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .todo-card {
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  .todo-item {
+    padding: 8px;
+  }
+  .nav-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .todo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .todo-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .todo-item {
+    padding: 6px;
+  }
+
+  .nav-btn {
+    font-size: 1rem;
+  }
+}
