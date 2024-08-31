@@ -214,6 +214,7 @@ cursor: pointer;
 
   form input{
     width: 270px;
+    margin-left: 10px;
   }
 
   .todo-container{
