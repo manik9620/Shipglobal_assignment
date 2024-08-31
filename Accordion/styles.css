@@ -1,0 +1,117 @@
+
+body {
+    font-family: "syne", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    user-select: none;
+}
+
+header{
+    background-color: #6d0da1;
+    padding: 15px;
+   
+}
+header h1{
+    margin: 0;
+    color: white;
+}
+
+main{
+    display: flex;
+    margin-top: 7REM;
+}
+
+.left{
+    width: 55%;
+}
+
+.accordion {
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.accordion-section {
+    border-top: 1px solid #eee;
+}
+
+.accordion-header {
+    background-color:#6d0da1;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header .icon {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+    background-color: #380354;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
+    padding: 0 16px;
+    opacity: 0;
+    background-color: #f9f9f9; 
+}
+
+.accordion-content p {
+    margin: 15px 0; 
+    color: #333; 
+}
+
+.accordion-content.open {
+    max-height: 500px; 
+    padding: 16px;
+    opacity: 1;
+}
+
+
+.right{
+    width: 45%;
+   text-align: center;
+   padding-top: 3rem;
+}
+
+.right h1{
+    font-size: 60px;
+    margin: 0;
+    color:#6d0da1;
+}
+
+.right p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.icon.rotate {
+    transform: rotate(45deg );
+}
+
+@media(max-width:480px){
+    main{
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .left{
+        width: 100%;
+    }
+}
