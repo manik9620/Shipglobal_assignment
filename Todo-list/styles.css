@@ -204,4 +204,30 @@ cursor: pointer;
   .nav-btn {
     font-size: 1rem;
   }
+
+}
+
+@media (max-width:480px){
+  form{
+    width: 400px;
+  }
+
+  form input{
+    width: 270px;
+  }
+
+  .todo-container{
+    width: 100vw;
+    flex-direction: row;
+    margin-left: 25px;
+  }
+
+  .todo-card{
+    width: 165px;
+  }
+
+  .todo-item{
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 }
