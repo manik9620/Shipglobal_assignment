@@ -10,13 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const todoItem = createTodoItem(taskText);
 
-    const backlogList = document.querySelector("#backlog .todo-list");
+    const backlogList = document.querySelector("#todo .todo-list");
     backlogList.appendChild(todoItem);
 
     newTaskInput.value = "";
 
     updateButtonStates();
   });
+
+
 
   function createTodoItem(taskText) {
     const todoItem = document.createElement("li");
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return todoItem;
   }
 
+
+
   function moveTask(event) {
     const todoItem = event.target.closest(".todo-item");
     const currentList = todoItem.parentElement;
@@ -56,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const todoCardId = todoCard.id;
 
     let targetList;
-
     if (event.target.classList.contains("right")) {
       switch (todoCardId) {
         case "backlog":
@@ -97,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 300);
     }
   }
+
+
 
   function deleteTask(event) {
     const todoItem = event.target.closest(".todo-item");
